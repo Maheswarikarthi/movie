@@ -31,13 +31,13 @@ const newMovie= new movieModel({
 
 
 })
-const getAmovie=(getMovie,async(request,response)=>{
+const getAmovie=(async(request,response)=>{
     // response.send(`displaying item with id ${request.params.id}`)
     // response.json(request.body)
     response.status(200).json(response.movie);
 
 })
-const updateAmovie=(getMovie,async(request,response)=>{
+const updateAmovie=(async(request,response)=>{
     // response.send(`updating item with id ${request.params.id}`)
     // response.json(request.body)
     if(request.body.moviename!=null){
@@ -66,7 +66,7 @@ const updateAmovie=(getMovie,async(request,response)=>{
 
 
 })
-const deleteAmovie=(getMovie,async(request,response)=>{
+const deleteAmovie=(async(request,response)=>{
     // response.send(`deleting item with id ${request.params.id}`)
     // response.json(request.body)
     try{
